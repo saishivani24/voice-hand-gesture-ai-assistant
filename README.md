@@ -1,32 +1,52 @@
-# Voice & Hand Gesture AI Assistant
+# Voice and Gesture
 
-A multimodal AI assistant that enables hands-free interaction using voice commands and hand gestures.
+```
+(myenv) (base) C:\Users\Shivani\OneDrive\Desktop\Gesture-Controlled-Virtual-Mouse-main\src>python --version
+Python 3.8.5
+```
 
-## Features
-- Real-time hand gesture recognition
-- Voice command processing
-- Mouse and cursor control using gestures
-- AI-powered command handling
-- Hands-free user interaction
+# set microphone to 45%
 
-## Technologies Used
-- Python
-- OpenCV
-- MediaPipe
-- Speech Recognition
-- GPT
-- PyAutoGUI
+# Anaconda Navigator
 
-## My Contributions
-- Implemented gesture recognition functionality
-- Contributed to voice command processing
-- Tested and optimized real-time interaction workflows
-- Collaborated on system integration and debugging
+```
+Anaconda Navigator 1.10.0:
+Release Date: November 20, 2020.
+Notable Feature: Navigator now remembers the last environment used instead of loading the default environment each time. Additionally, it has improved integration with Anaconda Team Edition2.
+```
 
-## Team Project
-This project was developed collaboratively as part of a team effort.
+# Fine tuning mode: 
+```
+    output = model.generate(
+        input_ids,
+        max_length=max_length,
+        num_return_sequences=num_return_sequences,
+        temperature=temperature,
+        top_k=50,  # Consider top-50 tokens during sampling
+        top_p=0.95,  # Use nucleus sampling with cumulative probability cutoff
+        repetition_penalty=1.2,  # Discourage repetition in generated sequences
+        no_repeat_ngram_size=3,  # Avoid repeating n-grams of size 3
+        early_stopping=True  # Stop generation when EOS token is reached
+    )
+```
 
-## Future Improvements
-- Support for custom gestures
-- Enhanced AI command understanding
-- Cross-platform deployment
+# Follow these steps to run the code
+
+## steps
+- `Clone the repo https:github.com/sai8151/balu`
+- `Open anaconda`
+- `launch vs code`
+- `create a venv else activate if exist`
+- `to activate in windows:`
+```
+cd myenv
+cd Scripts
+activate
+```
+- `install all libraries in req.txt`
+- `make sure you have gpt2`
+- `pip install opencv-python mediapipe pyautogui comtypes protobuf screen_brightness_control pycaw`
+```
+python test.py
+```
+- `voice command:"run Gesture Controller" this will run the Gesture Controller python code in the same dir`
